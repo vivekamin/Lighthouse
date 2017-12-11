@@ -40,48 +40,48 @@ tabular_to_CSV.py file: (Use Python for this)
 
 reduce_dataset.py file:
 
-        Input: venue_h5Index_final.csv and acm_citation.csv (Output of previous step)
+    Input: venue_h5Index_final.csv and acm_citation.csv (Output of previous step)
 
-	Output: reduced_acm_citation.csv
+    Output: reduced_acm_citation.csv
 	
-        Run Command: python3 reduce_dataset.py
+    Run Command: python3 reduce_dataset.py
 
-	Description: There are 32 venues listed in venue_score.csv which is used to filter out all the authors from acm_citation.csv (reduction of the dataset size from 2.2M to 0.9M i.e. the resultant belongs to only those 32 venues). It takes several hours to run.
+    Description: There are 32 venues listed in venue_score.csv which is used to filter out all the authors from acm_citation.csv (reduction of the dataset size from 2.2M to 0.9M i.e. the resultant belongs to only those 32 venues). It takes several hours to run.
 
 ## Creation of Final Dataset
 
 For Training Dataset, final_data_generator.py file:
 
-	Input: venue_h5Index_final.csv, reduced_acm_citation.csv, venue_score.csv
+    Input: venue_h5Index_final.csv, reduced_acm_citation.csv, venue_score.csv
 
-	Output: final_dataset.csv
+    Output: final_dataset.csv
 
-	Run Command: python3 final_data_generator.py
+    Run Command: python3 final_data_generator.py
 
-	Description: Training Dataset consists of the dataset till year 2008
+    Description: Training Dataset consists of the dataset till year 2008
 
 
 For Testing Dataset, final_data_generator.py file:
 
-        Input: venue_h5Index_final.csv, reduced_acm_citation.csv, venue_score.csv 
+    Input: venue_h5Index_final.csv, reduced_acm_citation.csv, venue_score.csv 
+	
+    Output: test5kdata.csv
    
-        Output: test5kdata.csv
+    Run Command: python3 final_data_generator.py
    
-        Run Command: python3 final_data_generator.py
-   
-        Description: The same file is used by changing years to 2013 and limiting entries to 5000 as well as hanging the name of output file to test5kdata.csv.
+    Description: The same file is used by changing years to 2013 and limiting entries to 5000 as well as hanging the name of output file to test5kdata.csv.
 
 ## Training Model
 
 For Multinomial Logistic Regression and KNN Classifier, knn_AndMLR.py file:
 
-        Input: final_dataset.csv, test5kdata.csv
+    Input: final_dataset.csv, test5kdata.csv
 
-        Output: output.txt, fig1.pdf (Resultant Output Graph will be generated)
+    Output: output.txt, fig1.pdf (Resultant Output Graph will be generated)
 
-        Run Command: python3 knn_AndMLR.py
+    Run Command: python3 knn_AndMLR.py
 	
-	Description:  Both the models are implemented in the same file. The dataset is trained with the multinomial logistic regression algorithm and KNN Classifier where K=5 and there are 9 classes used for classification. From the resultant graph, we can say the KNN Classifier results into better accuracy than Multinomial Logistic Regression for the given dataset. 
+    Description:  Both the models are implemented in the same file. The dataset is trained with the multinomial logistic regression algorithm and KNN Classifier where K=5 and there are 9 classes used for classification. From the resultant graph, we can say the KNN Classifier results into better accuracy than Multinomial Logistic Regression for the given dataset. 
 
 ## REFERENCES
 1. Paper-Citation Dataset: [DOI]: http://aminer.org/lab-datasets/citation/DBLP_citation_Sep_2013.rar
