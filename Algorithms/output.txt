@@ -1,0 +1,48 @@
+Training dataset size: 2 %
+Multinomial Logistic Regression accuracy is: 0.579084183163
+KNN accuracy is: 0.693861227754
+########################################################################
+Training dataset size: 11 %
+Multinomial Logistic Regression accuracy is: 0.618676264747
+KNN accuracy is: 0.726454709058
+########################################################################
+Training dataset size: 20 %
+Multinomial Logistic Regression accuracy is: 0.660467906419
+KNN accuracy is: 0.73925214957
+########################################################################
+Training dataset size: 29 %
+Multinomial Logistic Regression accuracy is: 0.652069586083
+KNN accuracy is: 0.744051189762
+########################################################################
+Training dataset size: 38 %
+Multinomial Logistic Regression accuracy is: 0.669066186763
+KNN accuracy is: 0.749650069986
+########################################################################
+Training dataset size: 47 %
+Multinomial Logistic Regression accuracy is: 0.670265946811
+KNN accuracy is: 0.76324735053
+########################################################################
+Training dataset size: 56 %
+Multinomial Logistic Regression accuracy is: 0.679464107179
+KNN accuracy is: 0.763447310538
+########################################################################
+Training dataset size: 64 %
+Multinomial Logistic Regression accuracy is: 0.676664667067
+KNN accuracy is: 0.765846830634
+########################################################################
+Training dataset size: 73 %
+Multinomial Logistic Regression accuracy is: 0.688462307538
+KNN accuracy is: 0.776044791042
+########################################################################
+Training dataset size: 82 %
+Multinomial Logistic Regression accuracy is: 0.687862427514
+KNN accuracy is: 0.772645470906
+########################################################################
+Training dataset size: 91 %
+Multinomial Logistic Regression accuracy is: 0.685262947411
+KNN accuracy is: 0.774045190962
+########################################################################
+Training dataset size: 100 %
+Multinomial Logistic Regression accuracy is: 0.692461507698
+KNN accuracy is: 0.778844231154
+########################################################################
